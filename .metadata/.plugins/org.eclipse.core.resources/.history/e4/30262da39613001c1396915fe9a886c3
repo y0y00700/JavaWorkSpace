@@ -1,0 +1,21 @@
+
+public class StirngEx {
+
+	public static void main(String[] args) {
+		String a = new String(" C#");
+		String b = new String(" ,C++ ");
+		
+		System.out.println(a+"의 길이는 "+ a.length());
+		System.out.println(a.contains("#"));
+		
+		a=a.concat(b); // a+b 문자열 연결
+		System.out.println(a);
+		
+		a=a.trim(); // 앞뒤 공백제거
+		System.out.println(a);
+		
+		a = a.replace("C#", "JAVA"); // 문자열 대치
+		System.out.println(a);
+		
+	}
+}

@@ -1,0 +1,12 @@
+import java.io.File;
+public class listDirectory {
+
+	public static listDirectory(File dir) {
+		
+	}
+	public static void main(String[] args) {
+		System.out.println("-----" + dir.getPath()+"의 서브리스트 입니다.");
+		
+		File[] subFiles = dir.listFiles();
+	}
+}

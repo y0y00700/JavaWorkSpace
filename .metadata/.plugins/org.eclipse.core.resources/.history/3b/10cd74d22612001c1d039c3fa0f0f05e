@@ -1,0 +1,8 @@
+
+public class ThisUsing {
+	String id;
+	String pw;
+	public ThisUsing() {
+		this()
+	}
+}

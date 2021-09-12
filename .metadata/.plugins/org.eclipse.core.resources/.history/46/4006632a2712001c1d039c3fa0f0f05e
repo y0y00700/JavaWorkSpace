@@ -1,0 +1,10 @@
+
+public class ThisUsing {
+	String id;
+	String pw;
+	
+	public ThisUsing() {
+		this("","");
+		System.out.println("생성자 호출");
+	}
+}

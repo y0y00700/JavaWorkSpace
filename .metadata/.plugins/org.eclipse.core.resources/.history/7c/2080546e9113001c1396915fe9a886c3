@@ -1,0 +1,9 @@
+public class InstanceOfOper{
+	class Shape{
+		protected String name;
+		public void paint() {
+			System.out,println(name);
+		}
+		
+	}
+}

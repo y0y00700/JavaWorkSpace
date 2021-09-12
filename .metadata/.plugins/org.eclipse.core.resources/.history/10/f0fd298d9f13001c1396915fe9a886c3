@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.io.*;
+public class FileWriterEx {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		FileWriter fout = null;
+		int c;
+		try {
+			fout = new FileWriter("c:\\temt\\text.txt");
+			while(true) {
+				String line = scan.nextLine();
+				if(line.length()==0) {
+					break;
+				}
+				
+			}
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

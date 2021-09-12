@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.io.*;
+public class FileWriterEx {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		FileWriter fout = null;
+		int c;
+		try {
+			fout = new FileWriter("c:\\temp\\text.txt");
+			while(true) {
+				String line = scan.nextLine();
+				if(line.length()==0) 
+					break;				
+				fout.write(line,0,line.length());
+				fout.write("\r\b",0,2);
+			}
+			fout.close();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		scan.close();
+	}
+}

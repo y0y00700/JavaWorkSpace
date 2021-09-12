@@ -1,0 +1,8 @@
+import java.util.Calendar;
+
+public class CalendarEx {
+
+	public static void printCalendar(String msg,Calendar cal) {
+		
+	}
+}

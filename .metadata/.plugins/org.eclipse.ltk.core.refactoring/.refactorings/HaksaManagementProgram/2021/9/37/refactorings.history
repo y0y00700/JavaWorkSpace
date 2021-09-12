@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;ojdbc6.jar&apos; to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;HaksaManagementProgram&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original element: &apos;HaksaManagementProgram/ojdbc6.jar&apos;" description="Copy source folder" element1="/ojdbc6.jar=/module=/true=/" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1630832490808" target="/StudentManagementPR/lib" version="1.0"/>
+</session>

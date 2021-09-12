@@ -1,0 +1,8 @@
+
+public class MathEx {
+
+	public static void main(String[] args) {
+		System.out.println(Math.PI);//원주율 상수 출력
+		System.out.println(Math.ceil(a));
+	}
+}

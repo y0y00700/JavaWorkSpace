@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;listDirectory&apos; to &apos;FileEx&apos;&#x0D;&#x0A;- Original project: &apos;JavaStreamFileIO&apos;&#x0D;&#x0A;- Original element: &apos;listDirectory&apos;&#x0D;&#x0A;- Renamed element: &apos;FileEx&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;listDirectory&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{listDirectory.java[listDirectory" matchStrategy="1" name="FileEx" qualified="false" references="true" similarDeclarations="false" stamp="1631434940845" textual="false" version="1.0"/>
+</session>

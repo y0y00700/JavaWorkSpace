@@ -1,0 +1,9 @@
+import java.util.Calendar;
+
+public class CalendarEx {
+
+	public static void printCalendar(String msg,Calendar cal) {
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH);
+	}
+}
