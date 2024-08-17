@@ -62,16 +62,17 @@ public class Password {
     public static void main(String[] args)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
-        StringBuilder sb2 = new StringBuilder();
+        br.readLine();
         String input = br.readLine();
         int [] transVal = {64,32,16,8,4,2,1};
         int transIdx = 0;
         int ansSum = 0;
         for(int i=0;i<input.length();i++){
             if((i+1)%7==0){
-                ansSum += transVal[transIdx];
-                sb.append((char)ansSum+" ");
-                sb2.append(ansSum+" ");
+                if(input.charAt(i)== '#'){
+                    ansSum += transVal[transIdx];
+                }
+                sb.append((char)ansSum);
                 transIdx = 0;
                 ansSum = 0;
             }else{
@@ -83,7 +84,5 @@ public class Password {
             }
         }
         System.out.println(sb.toString());
-        System.out.println(sb2.toString());
-        
     }
 }
