@@ -71,11 +71,12 @@ public class Mentoring {
             if(i==0){
                 for(int j=0;j<n;j++){
                     for(int k=j+1;k<n;k++){
-                        arL[inputArr[i][j]-1].add(inputArr[i][k]);// i 위치에 0넣어도 무방
+                        arL[(inputArr[0][j]-1)].add(inputArr[0][k]);// i 위치에 0넣어도 무방
                     }
                 }
             }else{
-                for(int j=1;j<n;j++){
+                for(int j=0;j<n;j++){
+                    if (j==0) continue;
                     for(int k=j-1;k>=0;j--){
                         if(arL[inputArr[i][j]-1].contains(inputArr[i][k])) arL[inputArr[i][j]-1].remove(Integer.valueOf(inputArr[i][k]));
                     }
