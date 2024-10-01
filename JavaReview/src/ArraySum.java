@@ -59,26 +59,17 @@ public class ArraySum {
         int mCount = 0;
         // 한쪽 배열의 인덱스가 전부 소진 될 시, 탈출 필요
         for(int i=0;i<(n+m);i++){
-            if(nCount>=n ||mCount>=m) break;
-            if(arr1[nCount] > arr2[mCount]){
-                ansArr[i] =arr2[mCount++];
-            }else{
-                ansArr[i] =arr1[nCount++];
+            if(arr1[nCount] >= arr2[mCount] && nCount<=n-1 && mCount<=m-1){
+                ansArr[i] =arr2[mCount==m-1?mCount:mCount++];
+            }else if(arr1[nCount] < arr2[mCount] && nCount<=n-1 && mCount<=m-1){
+                ansArr[i] =arr1[nCount==n-1?nCount:nCount++];
+            } else if (nCount == n-1 && mCount <= m-1) {
+                ansArr[i] = arr2[mCount==m-1?mCount:mCount++];
+            }else if(mCount == m-1 && nCount <= n-1){
+                ansArr[i] = arr2[mCount==m-1?mCount:mCount++];
             }
             sb.append(ansArr[i]+" ");
         }
-
-
-        // 나머지 남은 배열 처리 로직 효율화 추후 작성 필요
-        // if(nCount >= n){
-        //     for(int i=mCount;i<(n+m)-mCount;i++){
-        //         ansArr[i] = ansArr[mCount++];
-        //     }
-        // }else{
-        //     for(int i=nCount;i<(n+m)-nCount;i++){
-        //         ansArr[i] = ansArr[mCount++];
-        //     }
-        // }
         System.out.println(sb.toString());
         
     }
