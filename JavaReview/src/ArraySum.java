@@ -57,15 +57,26 @@ public class ArraySum {
         int ansArr [] = new int[n+m];
         int nCount = 0;
         int mCount = 0;
+        boolean flag = false;
         // 한쪽 배열의 인덱스가 전부 소진 될 시, 탈출 필요
         for(int i=0;i<(n+m);i++){
-            if(arr1[nCount] >= arr2[mCount] && nCount<=n-1 && mCount<=m-1){
+            if(arr1[nCount] >= arr2[mCount] && nCount<n-1 && mCount<m-1){
                 ansArr[i] =arr2[mCount==m-1?mCount:mCount++];
-            }else if(arr1[nCount] < arr2[mCount] && nCount<=n-1 && mCount<=m-1){
+            }else if(arr1[nCount] < arr2[mCount] && nCount<n-1 && mCount<m-1){
                 ansArr[i] =arr1[nCount==n-1?nCount:nCount++];
             } else if (nCount == n-1 && mCount <= m-1) {
+                if(flag == false){
+                    ansArr[i] = arr2[nCount];
+                    flag = true;
+                    continue;
+                }
                 ansArr[i] = arr2[mCount==m-1?mCount:mCount++];
             }else if(mCount == m-1 && nCount <= n-1){
+                if(flag == false){
+                    ansArr[i] = arr2[mCount];
+                    flag = true;
+                    continue;
+                }
                 ansArr[i] = arr2[mCount==m-1?mCount:mCount++];
             }
             sb.append(ansArr[i]+" ");
